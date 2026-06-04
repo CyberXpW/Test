@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "channel": "dev",
+  "generatedAt": "2026-06-04T05:12:59.920Z",
+  "apps": [
+    {
+      "id": "omni-connect",
+      "type": "app",
+      "name": "Omni Connect",
+      "version": "0.1.5",
+      "channel": "dev",
+      "releaseDate": "2026-06-04T05:12:59.920Z",
+      "required": false,
+      "artifact": {
+        "fileName": "Omni-Connect_0.1.5_x64-setup.exe",
+        "downloadUrl": "https://raw.githubusercontent.com/CyberXpW/Test/main/OmniConnectUpdates/releases/0.1.5/Omni-Connect_0.1.5_x64-setup.exe",
+        "size": 33504138,
+        "sha256": "A105AAC8A4D7608043B4EE5FDF1FCDF215A8AB37FEEA1BFD24A30260A72D24F1",
+        "isPortable": false,
+        "entryExecutable": null
+      },
+      "changelog": {
+        "new": [
+          "Feed DEV migrado para endpoint publico em CyberXpW/Test",
+          "Painel Desenvolvimento com status interno da build e copia de diagnostico",
+          "Aviso de atualizacao do launcher tambem aparece no Mobile Display",
+          "Controle de atualizacao automatica global e por aplicativo",
+          "Fallback dev para configurar caminho manual de executaveis por produto"
+        ],
+        "fixed": [
+          "Atualizacoes automaticas agora ficam desligadas por padrao",
+          "Theme song do launcher usa volume inicial mais baixo",
+          "Videos do launcher respeitam o gerenciador global de audio"
+        ],
+        "improved": [
+          "Ducking de audio centralizado para videos, modais, jogos e apps abertos",
+          "Versao atual exibida de forma discreta no cabecalho",
+          "Preferencias persistidas para volume, tema, canal, biblioteca e paths manuais"
+        ],
+        "notes": [
+          "Atualizacao DEV usa instalador completo via manifest; delta binario fica para um updater dedicado futuro"
+        ]
+      },
+      "description": "Launcher oficial da DublaX Team para apps, downloads, Omni Play e distribuicao interna."
+    },
+    {
+      "id": "dub-ai",
+      "type": "app",
+      "name": "OmniVoice Dub-AI",
+      "version": "0.1.0",
+      "channel": "dev",
+      "releaseDate": "2026-06-02T12:00:00.000Z",
+      "required": false,
+      "artifact": {
+        "fileName": "OmniVoice-Dub-AI-installer.exe",
+        "downloadUrl": "",
+        "size": null,
+        "sha256": null,
+        "isPortable": false,
+        "entryExecutable": null
+      },
+      "changelog": {
+        "new": ["Base de distribuicao interna por manifest"],
+        "fixed": [],
+        "improved": ["Preparado para receber builds DEV pela DublaX Team"],
+        "notes": ["URL real sera publicada quando a primeira build interna estiver pronta"]
+      },
+      "description": "Motor de dublagem local e recursos de IA do ecossistema Omni."
+    },
+    {
+      "id": "voice-dub",
+      "type": "app",
+      "name": "DubbingTools",
+      "version": "0.1.0",
+      "channel": "dev",
+      "releaseDate": "2026-06-02T12:00:00.000Z",
+      "required": false,
+      "artifact": {
+        "fileName": "Dubbing Tool_0.1.0_x64-setup.exe",
+        "downloadUrl": "https://raw.githubusercontent.com/CyberXpW/Test/main/DubbingToolsApp/Dubbing%20Tool_0.1.0_x64-setup.exe",
+        "size": null,
+        "sha256": null,
+        "isPortable": false,
+        "entryExecutable": null
+      },
+      "changelog": {
+        "new": ["Build interna do DubbingTools registrada no manifest"],
+        "fixed": ["Fluxo de instalacao e atualizacao preparado para validacao diaria"],
+        "improved": ["Metadados passam a existir fora do codigo do launcher"],
+        "notes": ["SHA-256 sera obrigatorio na Sprint 6"]
+      },
+      "description": "Ferramenta da DublaX Team para fluxos de dublagem, voz e producao audiovisual."
+    }
+  ],
+  "packages": [
+    {
+      "id": "dubbingtools-cinematic-narrator",
+      "type": "package",
+      "targetAppId": "voice-dub",
+      "name": "Pacote Narrador Cinematografico",
+      "version": "0.1.0",
+      "channel": "dev",
+      "releaseDate": "2026-06-02T12:00:00.000Z",
+      "required": false,
+      "installMode": "preset",
+      "artifact": {
+        "fileName": "dubbingtools-cinematic-narrator-0.1.0.omnipkg",
+        "downloadUrl": "",
+        "size": null,
+        "sha256": null,
+        "isPortable": true,
+        "entryExecutable": null
+      },
+      "changelog": {
+        "new": ["Primeiro pacote conceitual do marketplace interno"],
+        "fixed": [],
+        "improved": [],
+        "notes": ["Pacotes serao instalaveis apos a Sprint 5"]
+      },
+      "description": "Preset interno para validar distribuicao de conteudo do DubbingTools."
+    }
+  ]
+}
