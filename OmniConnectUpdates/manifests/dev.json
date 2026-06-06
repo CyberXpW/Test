@@ -1,44 +1,45 @@
 {
   "schemaVersion": 1,
   "channel": "dev",
-  "generatedAt": "2026-06-04T05:12:59.920Z",
+  "generatedAt": "2026-06-06T12:00:00.000Z",
   "apps": [
     {
       "id": "omni-connect",
       "type": "app",
       "name": "Omni Connect",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "channel": "dev",
-      "releaseDate": "2026-06-04T05:12:59.920Z",
+      "releaseDate": "2026-06-06T12:00:00.000Z",
       "required": false,
       "artifact": {
-        "fileName": "Omni-Connect_0.1.5_x64-setup.exe",
-        "downloadUrl": "https://raw.githubusercontent.com/CyberXpW/Test/main/OmniConnectUpdates/releases/0.1.5/Omni-Connect_0.1.5_x64-setup.exe",
-        "size": 33504138,
-        "sha256": "A105AAC8A4D7608043B4EE5FDF1FCDF215A8AB37FEEA1BFD24A30260A72D24F1",
+        "fileName": "Omni-Connect_0.1.6_x64-setup.exe",
+        "downloadUrl": "https://raw.githubusercontent.com/CyberXpW/Test/main/OmniConnectUpdates/releases/0.1.6/Omni-Connect_0.1.6_x64-setup.exe",
+        "size": 34085267,
+        "sha256": "704508B732399591ED4A2D35E13C8CCEE05434763622364F2E7967B8CFE3F9B6",
         "isPortable": false,
         "entryExecutable": null
       },
       "changelog": {
         "new": [
-          "Feed DEV migrado para endpoint publico em CyberXpW/Test",
-          "Painel Desenvolvimento com status interno da build e copia de diagnostico",
-          "Aviso de atualizacao do launcher tambem aparece no Mobile Display",
-          "Controle de atualizacao automatica global e por aplicativo",
-          "Fallback dev para configurar caminho manual de executaveis por produto"
+          "Firebase Auth integrado como base oficial de perfil do usuario",
+          "Infraestrutura de OM-ID real preparada via Cloud Function",
+          "Firestore Rules reforcadas para proteger perfis, counters e reservas de OM-ID",
+          "Cache local isolado por UID para evitar vazamento de dados entre contas",
+          "Painel Debug Firebase com status de perfil, OM-ID, role, channel e erro Google"
         ],
         "fixed": [
-          "Atualizacoes automaticas agora ficam desligadas por padrao",
-          "Theme song do launcher usa volume inicial mais baixo",
-          "Videos do launcher respeitam o gerenciador global de audio"
+          "Login nao bloqueia mais a sessao quando o contador remoto de OM-ID ainda nao esta deployado",
+          "Campos imutaveis do perfil nao podem mais ser sobrescritos pelo usuario comum",
+          "Ultimo e-mail lembrado no login volta a ser persistido corretamente"
         ],
         "improved": [
-          "Ducking de audio centralizado para videos, modais, jogos e apps abertos",
-          "Versao atual exibida de forma discreta no cabecalho",
-          "Preferencias persistidas para volume, tema, canal, biblioteca e paths manuais"
+          "Fluxo de perfil agora usa Firestore como fonte oficial da conta",
+          "Preparacao para roles user, developer e admin sem hardcode de e-mail",
+          "Preparacao para canal stable, beta e dev por perfil"
         ],
         "notes": [
-          "Atualizacao DEV usa instalador completo via manifest; delta binario fica para um updater dedicado futuro"
+          "Para OM-ID sequencial ficar ativo, deploy de firestore:rules e functions ainda e obrigatorio.",
+          "A conta operator@dublax.team deve ser configurada manualmente no Firestore como #OM-000000, developer e dev."
         ]
       },
       "description": "Launcher oficial da DublaX Team para apps, downloads, Omni Play e distribuicao interna."
