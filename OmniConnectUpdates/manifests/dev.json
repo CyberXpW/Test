@@ -1,45 +1,44 @@
 {
   "schemaVersion": 1,
   "channel": "dev",
-  "generatedAt": "2026-06-06T12:00:00.000Z",
+  "generatedAt": "2026-06-09T23:00:00.000Z",
   "apps": [
     {
       "id": "omni-connect",
       "type": "app",
       "name": "Omni Connect",
-      "version": "0.1.6",
+      "version": "0.1.9",
       "channel": "dev",
-      "releaseDate": "2026-06-06T12:00:00.000Z",
+      "releaseDate": "2026-06-09T23:00:00.000Z",
       "required": false,
       "artifact": {
-        "fileName": "Omni-Connect_0.1.6_x64-setup.exe",
-        "downloadUrl": "https://raw.githubusercontent.com/CyberXpW/Test/main/OmniConnectUpdates/releases/0.1.6/Omni-Connect_0.1.6_x64-setup.exe",
-        "size": 34085267,
-        "sha256": "704508B732399591ED4A2D35E13C8CCEE05434763622364F2E7967B8CFE3F9B6",
+        "fileName": "Omni-Connect_0.1.9_x64-setup.exe",
+        "downloadUrl": "https://raw.githubusercontent.com/CyberXpW/Test/main/OmniConnectUpdates/releases/0.1.9/Omni-Connect_0.1.9_x64-setup.exe",
+        "size": 34202209,
+        "sha256": "32032F0CD1CDEB6DE16D88ECA1BAD01CE16362B3C2DE74F36803D1E3C6EF06B8",
         "isPortable": false,
         "entryExecutable": null
       },
       "changelog": {
         "new": [
-          "Firebase Auth integrado como base oficial de perfil do usuario",
-          "Infraestrutura de OM-ID real preparada via Cloud Function",
-          "Firestore Rules reforcadas para proteger perfis, counters e reservas de OM-ID",
-          "Cache local isolado por UID para evitar vazamento de dados entre contas",
-          "Painel Debug Firebase com status de perfil, OM-ID, role, channel e erro Google"
+          "Store Control, Admin Console e Arcade integrados ao launcher",
+          "Firebase Auth e perfil por usuario sincronizados como base oficial",
+          "Backend Tauri atualizado para instalacao, updates e diagnosticos internos",
+          "Manifest DEV publicado como versao 0.1.9 para notificar clientes 0.1.5 e anteriores"
         ],
         "fixed": [
-          "Login nao bloqueia mais a sessao quando o contador remoto de OM-ID ainda nao esta deployado",
-          "Campos imutaveis do perfil nao podem mais ser sobrescritos pelo usuario comum",
-          "Ultimo e-mail lembrado no login volta a ser persistido corretamente"
+          "Comparacao de versao do launcher passa a encontrar 0.1.9 acima de 0.1.5/0.1.6",
+          "Manifest aponta para o instalador 0.1.9 com tamanho e SHA-256 reais",
+          "Cache local continua isolado por UID para evitar vazamento entre contas"
         ],
         "improved": [
-          "Fluxo de perfil agora usa Firestore como fonte oficial da conta",
-          "Preparacao para roles user, developer e admin sem hardcode de e-mail",
-          "Preparacao para canal stable, beta e dev por perfil"
+          "Fluxo de update interno revisado para o canal DEV",
+          "UI, auth, store e distribuicao interna alinhados na mesma versao",
+          "Preparacao para roles user, developer e admin por perfil"
         ],
         "notes": [
-          "Para OM-ID sequencial ficar ativo, deploy de firestore:rules e functions ainda e obrigatorio.",
-          "A conta operator@dublax.team deve ser configurada manualmente no Firestore como #OM-000000, developer e dev."
+          "Atualizacao recomendada para todos os clientes 0.1.5, 0.1.6 e anteriores.",
+          "Se o launcher estiver aberto durante a instalacao, feche e execute novamente apos aplicar o update."
         ]
       },
       "description": "Launcher oficial da DublaX Team para apps, downloads, Omni Play e distribuicao interna."
